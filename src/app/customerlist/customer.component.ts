@@ -3,8 +3,8 @@ import { Component,Input } from '@angular/core';
 @Component({
   selector: 'customer',
     template: `
-            <article>
-                <header class="customer__name">{{value.name}}</header>
+            <article class="customer">
+                <header class="customer__name bg-primary">{{value.name}}</header>
                   <section class="card__body">
                     <figure class="customer__profile">
                       <img src="{{value.profilePicture}}" title="{{value.name}}" alt="{{value.name}}">
@@ -15,7 +15,7 @@ import { Component,Input } from '@angular/core';
                       <li class="customer__details--orders">View Orders</li>
                     </ul>
                   </section>          
-            </article>                  
+            </article>                
         `,
   styleUrls: ['../app.component.scss']
 })

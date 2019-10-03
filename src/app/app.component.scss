@@ -1,7 +1,4 @@
-$color_white: #fff;
-$background_color_blue: blue;
-
-.card {
+.customer {
 	width: 25%;
 	height: 210px;
 	margin: 2px;
@@ -12,58 +9,35 @@ $background_color_blue: blue;
 	margin: 8px;
 	transition: 0.3s;
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+	&:hover{ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+
+	&__header {
+		padding: 8px;
+		display: flex;
+	}
+	&__title {
+		font-size: 24px;
+		font-weight: 400;
+		font-weight: 500;
+		letter-spacing: .005em;
+		line-height: 32px;
+	}
+	&__row {
+		padding: 24px 16px 16px;
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: row;
+	}
+	&__img {
+		width: 40%;
+		height: 130px;
+		display: inline-block;
+	}
+ 
+	&__details {
+		width: 40%;
+		display: inline-block;
+		margin-left: 35px;
+	}
 }
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.card-header {
-	padding: 8px;
-	display: flex;
-	background-color: $background_color_blue;
-	flex-direction: row;
-}
-.card-title {
-	font-size: 24px;
-	font-weight: 400;
-	color: $color_white;
-	font-weight: 500;
-	letter-spacing: .005em;
-	line-height: 32px;
-}
-.card-row {
-	padding: 24px 16px 16px;
-	display: flex;
-	flex: 1 1 auto;
-	flex-direction: row;
-}
-.card-img {
-	width: 40%;
-	height: 130px;
-	display: inline-block;
-}
-.card-img img{
-	width: 100%;
-}
-.card-details {
-	width: 40%;
-	display: inline-block;
-	margin-left: 35px;
-}
-// sangeeta created css according to this below structure
-// <section>		
-// 			    <div class ='card'>
-// 					<div class='card-header'>
-// 						<span class="card-title">Ted james</span>
-// 					</div>
-// 					<div class ="card-row">
-// 						<div class="card-img">
-// 						<img src="assets/images/icon.png"/>
-// 						</div>
-// 						<div class="card-details">
-// 						  <p>Customers Name</p>
-// 						  <p>Customer Place</p>
-// 						  <p>View Order</p>
-// 						</div>
-// 					</div>
-// 			    </div>
-// 		</section>
+ 

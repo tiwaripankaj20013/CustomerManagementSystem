@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-root',
     template: `
           <main>
-            <section>
-              <h2>{{title}}</h2>
-              <customer class = "customer card" *ngFor = 'let customer of customersList' [value] = customer>
+            <header> <h2>{{title}}</h2></header>
+            <section class="row">
+             <customer class = "card col__3 " *ngFor = 'let customer of customersList' [value] = customer>
               </customer>
             </section> 
           </main>                   
