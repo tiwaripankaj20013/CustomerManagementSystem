@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
     template: `
-          <main>
-            <header> <h2>{{title}}</h2></header>
+          <main class="container">
+            <header class="row"> <h2 class="col__12 m-y-6">{{title}}</h2></header>
             <section class="row">
              <customer class = "card col__3 " *ngFor = 'let customer of customersList' [value] = customer>
               </customer>
