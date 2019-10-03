@@ -6,13 +6,13 @@ import { Component,Input } from '@angular/core';
             <article>
                 <header class="customer__name">{{value.name}}</header>
                   <section class="card__body">
-                    <figure class="customer--profile">
+                    <figure class="customer__profile">
                       <img src="{{value.profilePicture}}" title="{{value.name}}" alt="{{value.name}}">
                     </figure>
-                    <ul class="customer--details">
-                      <li class="customer--address--state">{{value.address.state}}</li>
-                      <li class="customer--address--city">{{value.address.country}}</li>
-                      <li class="customer--orders">View Orders</li>
+                    <ul class="customer__details">
+                      <li class="customer__details--state">{{value.address.state}}</li>
+                      <li class="customer__details--city">{{value.address.country}}</li>
+                      <li class="customer__details--orders">View Orders</li>
                     </ul>
                   </section>          
             </article>                  
