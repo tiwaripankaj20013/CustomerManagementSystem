@@ -1,3 +1,5 @@
+@import '../../../../scss/partials/variables';
+
 .customer {
     border-radius: 2px;
     box-sizing: border-box;
@@ -25,6 +27,12 @@
     &__profile {
         flex: 0 0 30%;
         padding: 0.75rem;
+    }
+    &__profile-edit{
+        float: right;
+        color: $white;
+        font-size: 1.5rem;
+        margin-top: -0.25rem;
     }
 
     &__address {
