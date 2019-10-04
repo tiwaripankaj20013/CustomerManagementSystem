@@ -1,0 +1,31 @@
+<!-- customer detail in Table format start -->
+<article class="customer">
+      <section class="customer__details">
+        <table id="customer-table">
+					  <thead>
+						<tr>
+						  <th>&nbsp;</th>
+						  <th>First Name</th>
+						  <th>Last Name</th>
+						  <th>Address</th>
+						  <th>City</th>
+						  <th>State</th>
+						  <th>Order Total</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr  *ngFor='let customer of customers'>
+						  <td><img src="../../../../assets/images/customer/customer1.png"/></td>
+						  <td>{{customer.firstName}}</td>
+						  <td>{{customer.lastName}}</td>
+						  <td>{{customer.address.society}}</td>
+						  <td>{{customer.address.city}}</td>
+						  <td>{{customer.address.state}}</td>
+						  <td>$0.00</td>
+						</tr>
+					  </tbody>
+				</table>
+      </section>          
+</article> 
+<!-- customer detail in Table format end -->
+
