@@ -17,8 +17,8 @@
     },
     {
         "id": 1002,
-        "lastName": "Ram",
-        "secondName": "sharma",
+        "firstName": "Ram",
+        "lastName": "sharma",
         "gender": "male",
         "phone": 9718605999,
         "email": "ram121@gmail.com",
