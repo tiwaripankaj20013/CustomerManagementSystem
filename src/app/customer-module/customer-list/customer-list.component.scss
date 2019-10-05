@@ -3,7 +3,6 @@
 
     &__list {
             padding: 8px;
-            list-style: inherit;
             
     }
 
@@ -12,19 +11,13 @@
         font-size: 14px;
         letter-spacing: 0.2px;
         text-transform: capitalize;
-    }    
+    } 
+    &__image{
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        border-radius: 50%;
+    }   
 
 }
-.copyright{
-    position: absolute;
-    background: #f5f5f5;
-    padding: 30px;
-    bottom: 0;
-    width: 100%;
-    border: 1px solid #e3e3e3;
-
-    &__text{
-        font-size: 0.9em;
-        color: #232222;
-    }
-}    
+   

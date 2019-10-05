@@ -8,15 +8,15 @@ import { Customer } from '../models/customer';
     templateUrl: './customer-card.component.html',
 })
 export class CustomerCardComponent {
-    title = 'Customers Card';
     customers: Customer[];
 
     constructor(private customerApiService: CustomerApiService) {
         console.log('Inside customer card component constructor');
-        // fetch customers data from server
+
     }
 
     ngOnInit() {
+        // get data from customer api service
         this.customerApiService.getCustomerApi()
         .subscribe((res) => {
             this.customers = res;

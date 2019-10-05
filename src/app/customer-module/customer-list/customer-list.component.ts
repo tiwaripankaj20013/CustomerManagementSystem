@@ -5,22 +5,20 @@ import { Customer } from '../models/customer';
 
 @Component({
     selector: 'customer-list',
-    //customer list template import 
     templateUrl: './customer-list.component.html',
-    //customer list template import
     styleUrls: ['./customer-list.component.scss']
 })
 export class CustomerListComponent {
     title = 'Customers List';
     customers: Customer[];
 
-    constructor(private customerApiService: CustomerApiService, @Inject('teamName') private team: string) {
+    constructor(private customerApiService: CustomerApiService) {
         console.log('Inside customer card component constructor');
 
     }
 
     ngOnInit() {
-        //Ajax call to fetch data from server
+        //get customer data from customer api service
         this.customerApiService.getCustomerApi()
             .subscribe((res) => {
                 this.customers = res;

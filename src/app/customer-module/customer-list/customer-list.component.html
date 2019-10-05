@@ -1,16 +1,14 @@
 <!-- customer detail in list format start -->
 
 <main class="container">
-    <header class="row">
-        <h2 class="col__12 m-y-6">{{title}}</h2>
-    </header>
     <section class="row customer">
         <ul class="customer__list">
-            <li class="customer__name" *ngFor='let customer of customers'>{{customer.firstName + ' ' + customer.lastName}}</li>
+            <li class="customer__name" *ngFor='let customer of customers'>
+                <img class="customer__image" src='../../../../assets/images/customer/{{customer.firstName}}-{{customer.id}}.png' alt={{customer.firstName}}{{customer.lastName}}/>
+                {{customer.firstName + ' ' + customer.lastName}}
+            </li>
         </ul>
     </section>
 </main>
-<footer class="copyright">
-    <h4 class="copyright__text">Created By Team : {{ team }}</h4>
-</footer>
+
 <!-- customer detail in Table format end -->

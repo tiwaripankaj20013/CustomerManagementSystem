@@ -4,13 +4,10 @@ import { Customer } from '../models/customer';
 
 @Component({
     selector: 'customer-table',
-    //customer table template import 
     templateUrl: './customer-table.component.html',
-    //customer table style import 
     styleUrls: ['./customer-table.component.scss']
 })
 export class CustomerTableComponent {
-    title = 'Customers Table';
     customers: Customer[];
 
     constructor(private customerApiService: CustomerApiService) {
