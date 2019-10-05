@@ -1,0 +1,30 @@
+.customer{
+    margin: 1rem 0.5rem;
+
+    &__list {
+            padding: 8px;
+            list-style: inherit;
+            
+    }
+
+    &__name {
+        margin: 12px 0px;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+    }    
+
+}
+.copyright{
+    position: absolute;
+    background: #f5f5f5;
+    padding: 30px;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid #e3e3e3;
+
+    &__text{
+        font-size: 0.9em;
+        color: #232222;
+    }
+}    
