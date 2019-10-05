@@ -1,19 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-import { CustomerListComponent } from './customerlist/customer-list.component';
-import { CustomerComponent } from './customerlist/customer.component';
+import { CustomerModule } from './customer-module/customer.module';
+import { FooterComponent } from './footer/footer.component';
+import { AppComponent } from './app.component';
+
+
+
 
 @NgModule({
   declarations: [
-    CustomerListComponent,
-    CustomerComponent
+    AppComponent,
+    FooterComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CustomerModule,
+   
   ],
-  providers: [],
-  bootstrap: [CustomerListComponent]
+  providers: [
+    { provide : 'teamName', useValue : 'UI Hustlers' }
+  ],
+
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
