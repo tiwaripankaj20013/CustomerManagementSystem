@@ -6,16 +6,11 @@ import { Component } from '@angular/core';
     styleUrls: ['./customer-header.component.scss']
 })
 export class CustomerHeaderComponent {
-    miniatureText: string = 'Customers';
-    cardView: string = 'Card View';
-    listView: string = 'List View';
-    tableView: string = 'Table View';
-    newCustomer: string = 'New Customer';
-    filter: string = 'Filter'
+    
 
-    constructor() {
-        console.log("inside customer header constructor");
-    }
+    // constructor() {
+    //     console.log("inside customer header constructor");
+    // }
 }
 
 

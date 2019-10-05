@@ -6,17 +6,23 @@
     <h2 class="h2-text m-t-3 mn-r-2">{{miniatureText}}</h2>
   </section>
   <nav class="menu-bar flex-class">
+<<<<<<< HEAD
     <ul class="m-t-6">
         <li class="listing menu-item">
             <a href="javascript:;" class="p-text menu-link"><span class="m-r-2"><i class="fa fa-th" aria-hidden="true"></i></span>Card View</a>
+=======
+    <ul class="m-t-6 customer__menu">
+        <li class="listing customer__menu--item">
+            <a [routerLink]="['showCustomerCardView']" class="p-text customer__menu--link customer__menu--link--active"><span class="m-r-2"><i class="fa fa-th" aria-hidden="true"></i></span>Card View</a>
+>>>>>>> 5883852430b64278a6e8b3d013aaf3f0547dbdc7
         </li>
-        <li class="listing menu-item">
-            <a href="javascript:;" class="p-text menu-link"><span class="m-r-2"><i class="fa fa-list" aria-hidden="true"></i></span>{{listView}}</a></li>
-        <li class="listing menu-item">
-          <a href="javascript:;" class="p-text menu-link"><span class="m-r-2"><i class="fa fa-table" aria-hidden="true"></i></span>{{tableView}}</a>
+        <li class="listing customer__menu--item">
+            <a [routerLink]="['showCustomerListView']" class="p-text customer__menu--link"><span class="m-r-2"><i class="fa fa-list" aria-hidden="true"></i></span>List View</a></li>
+        <li class="listing customer__menu--item">
+          <a [routerLink]="['showCustomerTableView']" class="p-text customer__menu--link"><span class="m-r-2"><i class="fa fa-table" aria-hidden="true"></i></span>Table View</a>
         </li>
-        <li class="listing menu-item">
-            <a href="javascript:;" class="p-text menu-link"><span class="m-r-2"><i class="fa fa-plus" aria-hidden="true"></i></span>{{newCustomer}}</a>
+        <li class="listing customer__menu--item">
+            <a href="javascript:;" class="p-text customer__menu--link--disable"><span class="m-r-2"><i class="fa fa-plus" aria-hidden="true"></i></span>Add New Customer </a>
         </li>
     </ul>
     <div class="filter">

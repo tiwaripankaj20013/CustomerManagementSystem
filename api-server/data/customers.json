@@ -19,7 +19,11 @@
 
          {
             "id": 1002,
+<<<<<<< HEAD
             "firstName": "ram",
+=======
+            "firstName": "Ram",
+>>>>>>> 5883852430b64278a6e8b3d013aaf3f0547dbdc7
 			"lastName": "sharma",
 			"gender": "male",
             "phone": 9718605999,
