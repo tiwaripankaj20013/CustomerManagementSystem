@@ -6,11 +6,6 @@ $medium-up: 600px;
 $large-up: 1000px;
 $global-radius: 4px;
 
-
-@mixin heading-font-regular {
-	font-family: 'Helvetica', 'Helvetica Neue', 'Arial', sans-serif;;
-}
-
 //TABLE STYLING
 .table {
 	border-collapse: collapse;
@@ -22,8 +17,9 @@ $global-radius: 4px;
 			padding: 0.35em 0 .35em;
             font-weight: 400;
 			text-align: left;
-			@include heading-font-regular;
 			font-size: 1.15em;
+			color :blue;
+			text-align:center;
 		}
 		
 	}
@@ -34,8 +30,8 @@ $global-radius: 4px;
 			border-bottom: 2px solid #ddd;
        
 			td {
-				padding: .75em 0;
-				
+				padding: 0.5em 0;
+				text-align:center;
 				a {
 					color: $primary-color;
 					text-decoration: none;
@@ -48,19 +44,17 @@ $global-radius: 4px;
 				}
 			}
 			td img{
-				height:50px;
+				height:40px;
 			}
 			td:nth-child(2){
 				color:blue;
 			}
 		}
 		tr:nth-child(even){
-				background-color:#f0f7f6;
+				background-color:#b9b2f194;
 			}
 			tr:nth-child(odd){
 				background-color:#fbf8f8;
 			}
 	}
 }
-
-
