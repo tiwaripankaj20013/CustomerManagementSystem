@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class CustomerHeaderComponent {
     
 
-    // constructor() {
-    //     console.log("inside customer header constructor");
-    // }
+    constructor() {
+        console.log("inside customer header constructor");
+    }
 }
 
 
