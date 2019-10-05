@@ -7,7 +7,7 @@ import { Customer } from '../models/customer';
     selector: 'customer-card',
     templateUrl: './customer-card.component.html',
 })
-export class CustomerCardComponent {
+export class CustomerCardViewComponent {
     title = 'Customers Card';
     customers: Customer[];
 

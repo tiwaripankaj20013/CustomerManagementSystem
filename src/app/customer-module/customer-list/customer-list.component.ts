@@ -10,7 +10,7 @@ import { Customer } from '../models/customer';
     //customer list template import
     styleUrls: ['./customer-list.component.scss']
 })
-export class CustomerListComponent {
+export class CustomerListViewComponent {
     title = 'Customers List';
     customers: Customer[];
 

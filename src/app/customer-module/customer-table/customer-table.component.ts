@@ -9,7 +9,7 @@ import { Customer } from '../models/customer';
     //customer table style import 
     styleUrls: ['./customer-table.component.scss']
 })
-export class CustomerTableComponent {
+export class CustomerTableViewComponent {
     title = 'Customers Table';
     customers: Customer[];
 
