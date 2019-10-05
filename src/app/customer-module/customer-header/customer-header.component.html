@@ -11,9 +11,9 @@
             <a [routerLink]="['showCustomerCardView']" class="p-text menu-link"><span class="m-r-2"><i class="fa fa-th" aria-hidden="true"></i></span>Card View</a>
         </li>
         <li class="listing menu-item">
-            <a href="javascript:;" class="p-text menu-link"><span class="m-r-2"><i class="fa fa-list" aria-hidden="true"></i></span>{{listView}}</a></li>
+            <a [routerLink]="['showCustomerListView']" class="p-text menu-link"><span class="m-r-2"><i class="fa fa-list" aria-hidden="true"></i></span>List View</a></li>
         <li class="listing menu-item">
-          <a href="javascript:;" class="p-text menu-link"><span class="m-r-2"><i class="fa fa-table" aria-hidden="true"></i></span>{{tableView}}</a>
+          <a [routerLink]="['showCustomerTableView']" class="p-text menu-link"><span class="m-r-2"><i class="fa fa-table" aria-hidden="true"></i></span>Table View</a>
         </li>
         <li class="listing menu-item">
             <a href="javascript:;" class="p-text menu-link"><span class="m-r-2"><i class="fa fa-plus" aria-hidden="true"></i></span>{{newCustomer}}</a>
