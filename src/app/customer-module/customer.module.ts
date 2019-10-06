@@ -1,15 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { CustomerApiService } from './services/customer-api.service';
-
-
-import { CustomerHeaderComponent } from './customer-header/customer-header.component';
-import { CustomerComponent } from './customer-card/customer/customer.component';
-import { CustomerCardViewComponent } from './customer-card/customer-card.component';
-import { CustomerListViewComponent } from './customer-list/customer-list.component';
-import { CustomerTableViewComponent } from './customer-table/customer-table.component';
+import { CustomerApiService } from './customer-home/services/customer-api.service';
+import { CustomerHomeComponent } from './customer-home/customer-home.component'; 
+import { CustomerHeaderComponent } from './customer-home/customer-header/customer-header.component';
+import { CustomerComponent } from './customer-home/customer-card/customer/customer.component';
+import { CustomerCardViewComponent } from './customer-home/customer-card/customer-card.component';
+import { CustomerListViewComponent } from './customer-home/customer-list/customer-list.component';
+import { CustomerTableViewComponent } from './customer-home/customer-table/customer-table.component';
 import {CUSTOMER_ROUTES} from './customer-routing.configure'
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -17,18 +17,16 @@ import {CUSTOMER_ROUTES} from './customer-routing.configure'
     CUSTOMER_ROUTES
   ],
   declarations: [
+    CustomerHomeComponent,
     CustomerHeaderComponent,
     CustomerComponent,
     CustomerCardViewComponent,
     CustomerListViewComponent,
-    CustomerTableViewComponent
+    CustomerTableViewComponent,
+ 
   ],
   exports: [
-    CustomerHeaderComponent,
-    CustomerCardViewComponent,
-    CustomerListViewComponent,
-    CustomerTableViewComponent,
-    
+    CustomerHomeComponent
   ],
   providers: [
     CustomerApiService,
