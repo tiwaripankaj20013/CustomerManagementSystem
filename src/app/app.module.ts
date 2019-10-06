@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { CustomerModule } from './customer-module/customer.module';
 import { FooterComponent } from './footer/footer.component';
+import { OrderComponent } from './order-list/order.component';
 import { AppComponent } from './app.component';
 import {HeaderComponent} from './header/header.component';
 import { from } from 'rxjs';
@@ -11,9 +12,9 @@ import { from } from 'rxjs';
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent
-
-  ],
+    HeaderComponent,
+    OrderComponent
+],
   imports: [
     BrowserModule,
     AppRoutingModule,
