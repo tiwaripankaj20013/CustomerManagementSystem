@@ -3,14 +3,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { CustomerModule } from './customer-module/customer.module';
 import { FooterComponent } from './footer/footer.component';
+import { OrderComponent } from './order-list/order.component';
 import { AppComponent } from './app.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent
-
+    FooterComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
