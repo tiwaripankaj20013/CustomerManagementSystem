@@ -1,0 +1,27 @@
+.menu{
+        display: flex;
+    &__brand{
+        font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #423434;
+    padding: 1rem;
+    margin: 0rem .75rem;
+        }
+    &__toggle{font-size: 2rem;
+            color: white;
+            background: transparent;
+        }
+    &__bar{display: flex;
+    }
+    &__item{margin: 1rem 0.75rem;
+    }
+    &__link{font-size: 1.25rem;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        &:hover,&:focus,.acive{
+            background: #fff;
+            color: #333;}
+    }
+    // &__brand{}
+}
