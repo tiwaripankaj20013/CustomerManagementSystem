@@ -16,11 +16,9 @@ const CUSTOMER_ROUTES: Routes = [
 	{ path: 'tableView', component: CustomerTableViewComponent },
 ]
 
-
 const APP_ROUTES_List: Routes = [
 	{ path: '', redirectTo: 'customers', pathMatch: 'full' },
 	{ path: 'home', redirectTo: 'customers', pathMatch: 'full' },
-
 	{
 		path: 'customers', component: CustomerHomeComponent,
 
