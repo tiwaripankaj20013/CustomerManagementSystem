@@ -8,7 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component' 
 import { FooterComponent } from './footer/footer.component';
 import { AppComponent } from './app.component';
-
+import {APP_ROUTES} from './app-routing.configure';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     OrderModule,
-    CustomerModule
+    CustomerModule,
+    APP_ROUTES,
     
   ],
   providers: [

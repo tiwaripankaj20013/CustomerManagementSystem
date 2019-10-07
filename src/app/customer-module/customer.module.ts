@@ -8,7 +8,7 @@ import { CustomerComponent } from './customer-home/customer-card/customer/custom
 import { CustomerCardViewComponent } from './customer-home/customer-card/customer-card.component';
 import { CustomerListViewComponent } from './customer-home/customer-list/customer-list.component';
 import { CustomerTableViewComponent } from './customer-home/customer-table/customer-table.component';
-import {CUSTOMER_ROUTES} from './customer-routing.configure'
+import {CUSTOMER_ROUTES} from './customer-routing.configure';
 
 @NgModule({
   imports: [
@@ -26,11 +26,14 @@ import {CUSTOMER_ROUTES} from './customer-routing.configure'
  
   ],
   exports: [
-    CustomerHomeComponent
+    CustomerHomeComponent,
+    CustomerCardViewComponent,
+    CustomerListViewComponent,
+    CustomerTableViewComponent,
   ],
   providers: [
     CustomerApiService,
   ],
- 
+  bootstrap: [CustomerCardViewComponent]
 })
 export class CustomerModule { }

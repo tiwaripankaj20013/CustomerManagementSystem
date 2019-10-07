@@ -1,24 +1,17 @@
 /* STYLING */
+@import '../../../../assets/scss/partials/variables';
 
-$primary-color: blue;
 $gray-color: #ddd;
-$medium-up: 600px;
-$large-up: 1000px;
-$global-radius: 4px;
-
 $background_color_pending: #FF9800;
 $background_color_paid: #4CAF50;
 $background_color_unpaid: #F44336;
 $background_color_unfullfilled: #F44336;
 $background_color_fullfilled: #9E9E9E;
-$background_color_status_active: blue;
 
-@mixin heading-font-regular {
-	font-family: 'Helvetica', 'Helvetica Neue', 'Arial', sans-serif;;
-}
+ 
 
 @mixin button-box-shadow{
- 	color: #fff;
+ 	color: $white;
     padding: 7px 12px;
     margin-right: 5px;
     text-decoration: none;
@@ -28,68 +21,17 @@ $background_color_status_active: blue;
     -ms-border-radius: 2px;
     border-radius: 2px;
     border: none;
-    font-size: 13px;
+    font-size: 1rem;
     outline: none;
 }
 @mixin label{
-	color: #FFFFFF;
+	color: $white;
 	padding: .2em .6em .3em;
 	font-size: 0.80em;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12)
 }
 //TABLE STYLING
-.table {
-	border-collapse: collapse;
-    width: 85%;
-    margin: 0 auto;
-	thead {
-		th {
-			padding: 0.35em 0 .35em;
-            font-weight: 400;
-			text-align: left;
-			@include heading-font-regular;
-			font-size: 1.15em;
-			color : white;
-			background-color : blue;
-			text-align:center;
-		}
-		
-	}
 
-	tbody {
-		border-bottom: 3px solid $primary-color;
-		tr {
-			border-bottom: 2px solid #ddd;
-       
-			td {
-				padding: .75em 0;
-				text-align:center;
-				a {
-					color: $primary-color;
-					text-decoration: none;
-					display: inline-block;
-					margin: 0 .5em 0 0;
-					&:hover, &:active, &:focus {
-						color: darken($primary-color, 10%);
-						border: none;
-					}
-				}
-			}
-			td img{
-				height:50px;
-			}
-			td:nth-child(2){
-				color:blue;
-			}
-		}
-		tr:nth-child(even){
-				background-color:#b9b2f194;
-			}
-			tr:nth-child(odd){
-				background-color:#fbf8f8;
-			}
-	}
-}
 
 .label-pending {
 	background-color: $background_color_pending;
@@ -116,11 +58,14 @@ $background_color_status_active: blue;
     @include button-box-shadow;
 }
 .order-status-active {
-	background-color: $background_color_status_active;
+	background-color: $blue;
 	@include button-box-shadow;
 }
 .order-list-button {
 	margin-left: 100px;
 	margin-bottom: 20px;
 	margin-top: 20px;
+	cursor: pointer;
 }
+
+td span[innertext='Unpaid']{background: #4CAF50;}

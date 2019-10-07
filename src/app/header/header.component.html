@@ -1,12 +1,26 @@
  <header class="bg-primary m-b-4">
      <nav class="menu container">
-         <a class="menu__brand" href="#"><figure class="logo"><img class="img-fill" src="~/../assets/images/svg/teamicon.svg" /></figure> Customer Manager</a>
-         <button class="menu__toggle"><i class="fa fa-bars"></i></button>
+         <a class="menu__brand" href="#">
+             <figure class="logo">
+                 <img class="img-fill" src="../../../assets/images/svg/teamicon.svg" />
+                </figure> Customer Manager
+        </a>
+         <button class="menu__toggle">
+             <i class="fa fa-bars"></i>
+        </button>
         <ul class="menu__bar">
-            <li class="menu__item"><a href="#" class="menu__link" routerLinkActive="menu__link--active">Customers</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" routerLinkActive="menu__link--active">Orders</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" routerLinkActive="menu__link--active">About</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" routerLinkActive="menu__link--active">Login</a></li>
+            <li class="menu__item">
+                <a  class="menu__link menu__link--active" [routerLink]="['customers']" routerLinkActive="menu__link--active">Customers</a>
+            </li>
+            <li class="menu__item">
+                <a [routerLink]="['orders']" class="menu__link" routerLinkActive="menu__link--active">Orders</a>
+            </li>
+            <li class="menu__item">
+                <a [routerLink]="['about']" class="menu__link" routerLinkActive="menu__link--active">About</a>
+            </li>
+            <li class="menu__item">
+                <a [routerLink]="['login']" class="menu__link" routerLinkActive="menu__link--active">Login</a>
+            </li>
         </ul>
      </nav>
  </header>

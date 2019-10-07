@@ -1,10 +1,7 @@
 /* STYLING */
+@import '../../assets/scss/partials/variables';
+ 
 
-$login_title_color: blue;
-$login_text_color: #FFCE31;
-$login_info_color: #89664C;
-$font_family: 'Product Sans', Arial, sans-serif;
-$background_color: rgba(255, 255, 255, 0.84);
 
 .about {
 	margin: 30px;
@@ -14,22 +11,22 @@ $background_color: rgba(255, 255, 255, 0.84);
 .about-message {
 	width: 400px;
 	margin: 6em auto;
-	padding: 40px;
+	padding: 3rem;
 	background-color: $background_color;
 	border-radius: 15em;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
-	font-family: $font_family;
+	 
 }
 .about_title {
 	text-align: center;
 	position: relative;
 	size: 20px !important;
-	color: $login_title_color;
+	color: $blue;
 }
 .about_text {
 	text-align: center;
 	color: $login_text_color;
-	text-shadow: -1px 1px 5px #ffe7b6;
+	text-shadow: 0px 1px 5px #ffe7b6;
 }
 .about_info {
 	text-align: center;
