@@ -1,5 +1,6 @@
 
 import { Products } from './products';
+
 //model representing customer entity
 export class Order {
     

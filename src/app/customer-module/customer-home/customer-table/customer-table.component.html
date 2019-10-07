@@ -1,6 +1,6 @@
 <!-- customer detail in Table format start -->
 <article class="customer p-t-6 m-t-6">
-	<section class="customer__details">
+	<section class="customer__details container">
 
 	  <table class="table">
 					<thead>
@@ -17,7 +17,7 @@
 					<tbody>
 					  <tr  *ngFor='let customer of customers'>
 						<td>
-							<img src='../../../../assets/images/customer/{{customer.firstName}}-{{customer.id}}.png' title="{{customer.firstName}} {{customer.lastName}}"
+							<img src='{{customerProfile}}/customer/{{customer.firstName}}-{{customer.id}}.png' title="{{customer.firstName}} {{customer.lastName}}"
 							alt="{{customer.firstName}} {{customer.lastName}}"/>
 							</td>
 						<td>{{customer.firstName | titlecase}}</td>

@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import {APP_ROUTES} from './app-routing.configure';
 
 @NgModule({
+  //component registeration
   declarations: [
     AppComponent,
     AboutComponent,
@@ -19,6 +20,7 @@ import {APP_ROUTES} from './app-routing.configure';
     HeaderComponent
 
   ],
+  //modules registeration
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,6 +29,7 @@ import {APP_ROUTES} from './app-routing.configure';
     APP_ROUTES,
     
   ],
+  //services registeration
   providers: [
     { provide : 'teamName', useValue : 'UI Hustlers' }
   ],

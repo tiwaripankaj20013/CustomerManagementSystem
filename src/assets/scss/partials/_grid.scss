@@ -1,19 +1,21 @@
-
-
 /*remove after before space change default fo*/
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
-.container{
+
+.container {
     max-width: 1170px;
     width: $full-width;
     margin: 0px auto;
 }
-.row{
+
+.row {
     display: flex;
     flex-wrap: wrap;
 }
- 
+
 $start:1;
 $end:12;
 
@@ -23,4 +25,4 @@ $end:12;
         max-width: $full-width*$i/$end;
         box-sizing: border-box;
     }
-  }
+}

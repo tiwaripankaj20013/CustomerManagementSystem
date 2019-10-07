@@ -10,7 +10,7 @@ import { Customer } from '../models/customer';
 
 export class CustomerTableViewComponent {
     customers: Customer[];
-
+    customerProfile="../../../assets/images";
     constructor(private customerApiService: CustomerApiService) {
         console.log('Inside customer card component constructor');
     }

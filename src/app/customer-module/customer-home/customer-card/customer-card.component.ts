@@ -17,6 +17,7 @@ export class CustomerCardViewComponent {
     }
 
     ngOnInit() {
+        
         // get data from customer api service
         this.customerApiService.getCustomerApi()
         .subscribe((res) => {

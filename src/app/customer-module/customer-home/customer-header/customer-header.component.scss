@@ -1,44 +1,4 @@
-.flex-class {
-  display: flex;
-  justify-content: space-between;
-}
 
-.customer__miniature {
-  display: flex;
-}
-
-.listing {
-  display: inline;
-  margin-right: 75px;
-}
-
-.grey-text {
-  color: grey;
-  font-weight: normal;
-}
-.h2-text{
-    font-size:1.8rem;
-}
-
-.p-text {
-  font-size: 1.1rem;
-  color: #000000b3;
-}
-
-.filter-text {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.input-search {
-  padding: 5px;
-}
-.profile-picture{
-    width:35px;
-    height:35px;
-    overflow: hidden;
-    border-radius:50%;
-}
 
 .customer__menu{
   padding-top: 0.85rem;
@@ -51,7 +11,10 @@
   &--link{
     font-size: 1.15rem;
     color: #333;
-    &:hover,&:focus{color:#6b7cda;}
+    &:hover,&:focus{
+      color:#6b7cda;
+      outline: none;
+    }
   }
   &--link--active{
     color:#6b7cda;

@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
     styleUrls: ['./customer-header.component.scss']
 })
 export class CustomerHeaderComponent {
-    
-
+    customerIcon='../../../assets/images';
     constructor() {
         console.log("inside customer header constructor");
     }

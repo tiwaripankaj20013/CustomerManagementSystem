@@ -9,20 +9,20 @@ import { Order } from '../models/order';
 })
 export class OrderListViewComponent {
     orders: Order[];
-    totalPrice:number;
+    totalPrice: number;
 
-    constructor( private orderservice: OrderService) {
+    constructor(private orderservice: OrderService) {
         console.log('Inside order-list constructor');
     }
 
     ngOnInit() {
         // get data from customer api service
         this.orderservice.getOrderApi()
-        .subscribe((res) => {
-            this.orders = res;
-            console.log(res);
-        })
-            
+            .subscribe((res) => {
+                this.orders = res;
+                console.log(res);
+            })
+
     }
 
 }

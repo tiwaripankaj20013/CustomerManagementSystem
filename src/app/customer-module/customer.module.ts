@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { CustomerApiService } from './customer-home/services/customer-api.service';
@@ -8,13 +9,14 @@ import { CustomerComponent } from './customer-home/customer-card/customer/custom
 import { CustomerCardViewComponent } from './customer-home/customer-card/customer-card.component';
 import { CustomerListViewComponent } from './customer-home/customer-list/customer-list.component';
 import { CustomerTableViewComponent } from './customer-home/customer-table/customer-table.component';
-import {CUSTOMER_ROUTES} from './customer-routing.configure';
+//import {CUSTOMER_ROUTES} from './customer-routing.configure';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
-    CUSTOMER_ROUTES
+    RouterModule,
+    //CUSTOMER_ROUTES
   ],
   declarations: [
     CustomerHomeComponent,

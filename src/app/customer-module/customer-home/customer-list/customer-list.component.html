@@ -4,7 +4,7 @@
     <section class="row customer">
         <ul class="customer__list">
             <li class="customer__name" *ngFor='let customer of customers'>
-                <img class="customer__image" src='../../../../assets/images/customer/{{customer.firstName}}-{{customer.id}}.png' alt={{customer.firstName}}{{customer.lastName}}/>
+                <img class="customer__image" src='{{customerProfile}}/customer/{{customer.firstName}}-{{customer.id}}.png' alt={{customer.firstName}}{{customer.lastName}}/>
                 {{customer.firstName + ' ' + customer.lastName}}
             </li>
         </ul>

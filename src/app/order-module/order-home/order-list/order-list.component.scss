@@ -1,71 +1,53 @@
-/* STYLING */
+
 @import '../../../../assets/scss/partials/variables';
-
-$gray-color: #ddd;
-$background_color_pending: #FF9800;
-$background_color_paid: #4CAF50;
-$background_color_unpaid: #F44336;
-$background_color_unfullfilled: #F44336;
-$background_color_fullfilled: #9E9E9E;
-
- 
-
-@mixin button-box-shadow{
- 	color: $white;
-    padding: 7px 12px;
-    margin-right: 5px;
-    text-decoration: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
-    border: none;
-    font-size: 1rem;
-    outline: none;
-}
-@mixin label{
-	color: $white;
-	padding: .2em .6em .3em;
-	font-size: 0.80em;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12)
-}
-//TABLE STYLING
+@import '../../../../assets/scss/partials/mixins';
 
 
 .label-pending {
-	background-color: $background_color_pending;
-	@include label;
-}
-.label-paid {
-	background-color: $background_color_paid;
-	@include label;
-}
-.label-unpaid {
-	background-color: $background_color_unpaid;
-	@include label;
-}
-.label-unfullfilled {
-	background-color: $background_color_unfullfilled;
-	@include label;
-}
-.label-fullfilled {
-	background-color: $background_color_fullfilled;
-	@include label;
-}
-.order-status {
-	background-color: $background_color_fullfilled;
-    @include button-box-shadow;
-}
-.order-status-active {
-	background-color: $blue;
-	@include button-box-shadow;
-}
-.order-list-button {
-	margin-left: 100px;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	cursor: pointer;
+    background-color: $orange;
+    @include label;
 }
 
-td span[innertext='Unpaid']{background: #4CAF50;}
+.label-paid {
+    background-color: $sucess;
+    @include label;
+}
+
+.label-unpaid {
+    background-color: $gray;
+    @include label;
+}
+
+.label-unfullfilled {
+    background-color: $danger;
+    @include label;
+}
+
+.label-fullfilled {
+    background-color: $sucess;
+    @include label;
+}
+
+.order-status {
+    background-color: $gray;
+    @include button-box-shadow;
+}
+
+.order-status-active {
+    background-color: $blue;
+    @include button-box-shadow;
+}
+
+.order-list-button {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.table {
+    tbody {
+        tr td {
+            padding: 0.75rem;
+        }
+    }
+}
