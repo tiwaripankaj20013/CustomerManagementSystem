@@ -19,9 +19,9 @@ const CUSTOMER_ROUTES: Routes = [
 ]
 
 const APP_ROUTES_List: Routes = [
-	{ path: 'customers/cardView/customerDetail/:id', component: CustomerDetailComponent },
-
+	
 	{ path: '', redirectTo: 'customers', pathMatch: 'full' },
+	{ path: 'customers/cardView/customerDetail/:id', component: CustomerDetailComponent },
 	{ path: 'home', redirectTo: 'customers', pathMatch: 'full' },
 	{
 		path: 'customers', component: CustomerHomeComponent,

@@ -2,41 +2,43 @@
   <section class="container">
     <h2 class="m-b-6 m-l-4">Add New Customer</h2>
 
-    <form class="newCustomerform" (ngSubmit)='customerForm.valid && formSubmitted(customerForm.value);' name="custForm" #customerForm="ngForm" novalidate>
+    <form class="newCustomerform" name="customerForm"
+      (ngSubmit)='customerForm.valid && formSubmitted(customerForm.value);' #customerForm="ngForm" novalidate>
 
       <div class="form-row">
         <label for="firstName">First Name</label>
-        <input type="text"  class="form-control"
-          placeholder="First name" minlength="3" maxlength="8"  required  name="firstName"
-          >
-        <div class="error text-danger" [hidden]='name.valid || name.pristine'>
-          <span> Please enter your first name  </span>
+        <input type="text" class="form-control" placeholder="First name" minlength="3" maxlength="8" required
+          name="firstName" [(ngModel)]='firstName' id='firstName'>
+        <div class="error text-danger">
+          <span> Please enter your first name </span>
         </div>
       </div>
 
       <div class="form-row">
         <label for="lastName">Last Name</label>
-        <input type="text"  class="form-control"
-          placeholder="Last name" minlength="3" maxlength="8"  required name="lastName">
-        <div class="error text-danger" >
-          <span>Please enter your last name  </span>
+        <input type="text" class="form-control" placeholder="Last name" minlength="3" maxlength="8" required
+          [(ngModel)]='lastName' id='lastName' name='lastName' #last="ngModel">
+        <div class="error text-danger">
+          <span>Please enter your last name </span>
         </div>
       </div>
 
       <div class="form-row">
         <label for="gender">Gender</label>
-        <input type="radio" value="male" name="gender" class="m-r-2">Male
-        <input type="radio" value="female" name="gender" class="m-r-2">Female
+        <input type="radio" value="male" name="gender" class="m-r-2" [(ngModel)]='genderMale' id='genderMale'
+          name='customerGender' #gender="ngModel">Male
+        <input type="radio" value="female" name="gender" class="m-r-2" [(ngModel)]='genderFemale' id='genderFemale'
+          name='customerGender' #gender="ngModel">Female
         <div class="error text-danger m-t-3">Select is required</div>
       </div>
       <div class="form-row">
         <label for="phone">Phone</label>
-        <input type="tel" class="form-control" placeholder="+91-9999999999" name="phone" required >
+        <input type="tel" class="form-control" placeholder="+91-9999999999" name="phone" required>
         <div class="error text-danger">enter phone number</div>
       </div>
       <div class="form-row">
         <label for="email">Email</label>
-        <input type="email" class="form-control" placeholder="abc@gmail.com" name="email"  required>
+        <input type="email" class="form-control" placeholder="abc@gmail.com" name="email"  required >
         <div class="error text-danger">Please enter your email-id</div>
       </div>
       <div class="form-row">
